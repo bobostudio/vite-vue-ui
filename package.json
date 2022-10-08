@@ -1,0 +1,31 @@
+{
+  "name": "smarty-ui-vite",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "docs:dev": "vitepress dev docs --port 4000",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "keywords": [],
+  "author": "BB-Code <15919854639@163.com>",
+  "license": "MIT",
+  "bbCodeName": "bb-code",
+  "devDependencies": {
+    "@algolia/client-search": "^4.9.1",
+    "@iconify-json/ic": "1.1.4",
+    "@types/node": "^18.8.3",
+    "@vitejs/plugin-vue": "3.0.3",
+    "@vitejs/plugin-vue-jsx": "2.0.0",
+    "unocss": "^0.45.28",
+    "vite": "3.0.7",
+    "vitepress": "0.22.4",
+    "vitepress-theme-demoblock": "1.4.2"
+  },
+  "dependencies": {
+    "vue": "3.2.37"
+  }
+}

@@ -18,15 +18,22 @@ jobs:
       run: pnpm install
     - name: Run Test
       run: pnpm test
-    - name: Build
-      run: pnpm build
-    - name: "Publish to the npm registry"
-      uses: "primer/publish@3.0.0"
-      env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
-        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+    - name: Run Coverage
+      run: pnpm coverage
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
       with:
-        dry_run: true
-        npm-args: "--unsafe-perm --allow-same-version"
-        default_branch: "main"
+        directory: coverage
+        token: ${{ secrets.CODECOV_TOKEN }}
+    # - name: Build
+    #   run: pnpm build
+    # - name: "Publish to the npm registry"
+    #   uses: "primer/publish@3.0.0"
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.TOKEN }}
+    #     NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+    #   with:
+    #     dry_run: true
+    #     npm-args: "--unsafe-perm --allow-same-version"
+    #     default_branch: "main"
 

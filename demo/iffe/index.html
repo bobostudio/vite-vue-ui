@@ -9,26 +9,25 @@
 </head>
 
 <body>
-    <h1>EDM Demo</h1>
+    <h1>IFFE Demo</h1>
     <div id="app"></div>
     <link rel="stylesheet" href="../../dist/assets/entry.02a2e6bb.css">
-    <script type="module">
-        import { createApp } from "vue/dist/vue.esm-bundler.js";
-        import SmartyUI, {
-            Button,
-        } from "../../dist/smarty-ui.mjs";
-
+    <script src="../../node_modules/vue/dist/vue.global.js"></script>
+    <script src="../../dist/smarty-ui.iife.js"></script>
+    <script>
+        const { createApp } = Vue
+        // console.log('vue', Vue)
+        // console.log('SmartyUI', SmartyUI)
         createApp({
             template: `
+        <div style="margin-bottom:20px;">
             <Button color="red" icon="search">红色按钮</Button>
             <Button color="blue">主要按钮</Button>
             <Button color="green">绿色按钮</Button>
             <Button color="gray">灰色按钮</Button>
             <Button color="yellow">黄色按钮</Button>
-`,
-        })
-            .component(Button.name, Button)
-            .mount("#app");
+        </div>
+    `}).use(SmartyUI.default).mount('#app')
     </script>
 </body>
 

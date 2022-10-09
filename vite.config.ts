@@ -48,7 +48,9 @@ export default defineConfig({
                 }
             }
         },
-        minify: false,
+        minify: 'terser',
+        reportCompressedSize: true,
+        sourcemap: true,
         lib: {
             entry: './src/entry.ts',
             name: 'SmartyUI',

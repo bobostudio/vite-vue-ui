@@ -24,4 +24,5 @@ jobs:
       uses: primer/publish@3.0.0
       with:
         token: ${{ secrets.NPM_TOKEN }}
+        default_branch: "publish"
 

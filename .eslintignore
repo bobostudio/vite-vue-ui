@@ -1,0 +1,8 @@
+*.sh
+node_modules
+lib
+dist
+converage
+*.md
+*.ttf
+src/index.ts

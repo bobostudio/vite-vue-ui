@@ -21,8 +21,9 @@ jobs:
     - name: Build
       run: pnpm build
     - name: "Publish to the npm registry"
-      uses: primer/publish@3.0.0
-      with:
-        token: ${{ secrets.NPM_AUTH_TOKEN }}
-        default_branch: "publish"
+    - uses: primer/publish@v3
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        default_branch: "main"
 

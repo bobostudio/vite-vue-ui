@@ -15,4 +15,4 @@ jobs:
     - name: Install Modules
       run: pnpm install
     - name: Run Test
-      run: pnpm test:run
+      run: pnpm test

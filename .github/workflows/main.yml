@@ -27,5 +27,4 @@ jobs:
         NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       with:
         default_branch: 'publish'
-        dir: 'smarty-ui-vite'
 

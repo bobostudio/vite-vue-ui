@@ -15,9 +15,8 @@
     "prepare": "husky install"
   },
   "keywords": [],
-  "author": "BB-Code <15919854639@163.com>",
+  "author": "bobostudio <13542838847@163.com>",
   "license": "MIT",
-  "bbCodeName": "bb-code",
   "devDependencies": {
     "@algolia/client-search": "^4.9.1",
     "@iconify-json/ic": "1.1.4",

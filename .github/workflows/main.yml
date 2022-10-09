@@ -8,6 +8,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     name: "publish npm"
+    environment: NPM_AUTH_TOKEN
     steps:
     - uses: actions/checkout@v3
     - uses: pnpm/action-setup@v2.1.0

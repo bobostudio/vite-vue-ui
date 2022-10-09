@@ -26,5 +26,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
         NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       with:
-        default_branch: "publish"
+        npm-args: "--unsafe-perm --allow-same-version"
+        default_branch: "main"
 

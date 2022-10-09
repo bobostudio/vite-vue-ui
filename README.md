@@ -1,5 +1,8 @@
 # vite-vue-ui
 
+
+[![CI](https://github.com/bobostudio/vite-vue-ui/actions/workflows/main.yml/badge.svg)](https://github.com/bobostudio/vite-vue-ui/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/bobostudio/vite-vue-ui/branch/main/graph/badge.svg?token=V1R783ZC8K)](https://codecov.io/gh/bobostudio/vite-vue-ui)
 ![GitHub](https://img.shields.io/github/license/bobostudio/vite-vue-ui)
 
 ## Features

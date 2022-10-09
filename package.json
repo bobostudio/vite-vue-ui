@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "description": "",
   "main": "index.js",
+  "homepage": "https://vite-vue-ui.vercel.app/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

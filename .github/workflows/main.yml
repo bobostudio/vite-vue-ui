@@ -23,6 +23,6 @@ jobs:
     - name: "Publish to the npm registry"
       uses: primer/publish@3.0.0
       with:
-        token: ${{ secrets.NPM_TOKEN }}
+        token: ${{ secrets.NPM_AUTH_TOKEN }}
         default_branch: "publish"
 

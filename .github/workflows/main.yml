@@ -19,7 +19,7 @@ jobs:
     - name: Run Test
       run: pnpm test
     - name: Build
-      run: cd smarty-ui-vite && pnpm build
+      run: pnpm build
     - name: "Publish to the npm registry"
       uses: primer/publish@3.0.0
       env:

@@ -25,5 +25,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
         NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        default_branch: "pubilsh"
+        npm-args: "--access public"
+        default_branch: "main"
 
